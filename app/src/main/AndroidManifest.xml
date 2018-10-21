@@ -22,9 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpPageforEnterprise" />
-        <activity
-            android:name=".LoginforEnterprise"
-            android:label="@string/title_activity_loginfor_enterprise"></activity>
+        <activity android:name=".signinactivityforenterprise"></activity>
     </application>
 
 </manifest>
