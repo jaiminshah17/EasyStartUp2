@@ -1,6 +1,7 @@
 package com.example.jaiminshah.easystartup;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -67,6 +68,8 @@ public class SignUpPageforEnterprise extends AppCompatActivity implements View.O
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())
                         {
+                            finish();
+                            startActivity(new Intent(getApplicationContext(),signinactivityforenterprise.class));
                             Toast.makeText(SignUpPageforEnterprise.this,"Registration successfull",Toast.LENGTH_LONG).show();
                         }
                         else
@@ -86,6 +89,7 @@ public class SignUpPageforEnterprise extends AppCompatActivity implements View.O
         }
         if (v == textviewsignup) {
             //will open signin activity
+            startActivity(new Intent(this, signinactivityforenterprise.class));
         }
     }
 
