@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             startActivity(new Intent(this,SignUpPageforEnterprise.class));
         }
+        if (v==button1)
+        {
+            startActivity(new Intent(this,SignupPageforJobseeker.class));
+        }
 
     }
 }

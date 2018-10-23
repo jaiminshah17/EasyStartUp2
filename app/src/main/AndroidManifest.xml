@@ -22,7 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpPageforEnterprise" />
-        <activity android:name=".signinactivityforenterprise"></activity>
+        <activity android:name=".signinactivityforenterprise" />
+        <activity android:name=".SignupPageforJobseeker" />
+        <activity android:name=".SigninActivityforJobSeeker"></activity>
     </application>
 
 </manifest>
