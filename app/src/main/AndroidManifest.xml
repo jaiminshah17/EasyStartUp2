@@ -24,7 +24,8 @@
         <activity android:name=".SignUpPageforEnterprise" />
         <activity android:name=".signinactivityforenterprise" />
         <activity android:name=".SignupPageforJobseeker" />
-        <activity android:name=".SigninActivityforJobSeeker"></activity>
+        <activity android:name=".SigninActivityforJobSeeker" />
+        <activity android:name=".ComanylistActivity"></activity>
     </application>
 
 </manifest>
