@@ -83,7 +83,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:textAllCaps="false"
-                android:text="didn't Sign Up? Please Click here" />
+                android:text="Didn't Sign Up? Please Click here" />
+
+            <Button
+                android:id="@+id/email_forgetpassword"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="false"
+                android:text="Forget your passward?" />
+
         </LinearLayout>
 
 
