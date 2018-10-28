@@ -45,6 +45,19 @@
         android:background="@drawable/buttonstyle"
         android:textSize="20sp"
         android:textColor="#FFFFFF"/>
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:text="Investor"
+        android:background="@drawable/buttonstyle"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"/>
+
     <TextView
         android:id="@+id/version"
         android:layout_width="wrap_content"

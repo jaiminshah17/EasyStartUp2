@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class signinactivityforenterprise extends AppCompatActivity implements View.OnClickListener {
+public class signInpageforInvestor extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonregister;
     private EditText editetxtemail;
@@ -26,7 +26,7 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signin_pagefor_enterprise);
+        setContentView(R.layout.activity_signin_pageforinvestor);
 
         buttonregister = (Button) findViewById(R.id.email_sign_in_button);
         editetxtemail = (EditText) findViewById(R.id.email);
@@ -36,13 +36,12 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
         textviewsignup.setOnClickListener(this);
         mAuth = FirebaseAuth.getInstance();
     }
-
     private void userlogin() {
         String email = editetxtemail.getText().toString().trim();
         String password = edittextpassword.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(this, "please enter emaiil address", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "please enter email address", Toast.LENGTH_LONG).show();
             //email is empty
             return;
         }
@@ -57,12 +56,12 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
                 if (task.isSuccessful())
                 {
                     //sign in user
-                    Toast.makeText(signinactivityforenterprise.this,"Registration done",Toast.LENGTH_LONG).show();
+                    Toast.makeText(signInpageforInvestor.this,"login done",Toast.LENGTH_LONG).show();
 
                 }
                 else
                 {
-                    Toast.makeText(signinactivityforenterprise.this,"Registration error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(signInpageforInvestor.this,"login error",Toast.LENGTH_LONG).show();
                 }
 
             }
@@ -70,18 +69,14 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
 
     }
 
-
-
-        @Override
-        public void onClick (View v){
-            if (v == buttonregister) {
-                userlogin();
-            }
-            if (v == textviewsignup) {
-                finish();
-                startActivity(new Intent(this, SignUpPageforEnterprise.class));
-            }
+    @Override
+    public void onClick(View v) {
+        if (v == buttonregister) {
+            userlogin();
+        }
+        if (v == textviewsignup) {
+            finish();
+            startActivity(new Intent(this, signUpPageforInvestor.class));
         }
     }
-
-
+}
