@@ -42,7 +42,7 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
         String password = edittextpassword.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(this, "please enter emaiil address", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "please enter email address", Toast.LENGTH_LONG).show();
             //email is empty
             return;
         }
@@ -57,12 +57,12 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
                 if (task.isSuccessful())
                 {
                     //sign in user
-                    Toast.makeText(signinactivityforenterprise.this,"Registration done",Toast.LENGTH_LONG).show();
+                    Toast.makeText(signinactivityforenterprise.this,"Login done",Toast.LENGTH_LONG).show();
 
                 }
                 else
                 {
-                    Toast.makeText(signinactivityforenterprise.this,"Registration error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(signinactivityforenterprise.this,"Login error",Toast.LENGTH_LONG).show();
                 }
 
             }

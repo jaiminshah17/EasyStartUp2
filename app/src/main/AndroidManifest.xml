@@ -29,6 +29,7 @@
         <activity android:name=".PromptPage" />
         <activity android:name=".signInpageforInvestor" />
         <activity android:name=".signUpPageforInvestor" />
+        <activity android:name=".Jobseeker_ProfileActivity"></activity>
     </application>
 
 </manifest>

@@ -31,6 +31,22 @@
           }
         },
         {
+          "client_id": "864827028567-d2b9vb74gh2huhbambs9qq5e4b62m8kf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaiminshah.easystartup",
+            "certificate_hash": "6b200c0fed10b64a8e50cce43c962971349060ce"
+          }
+        },
+        {
+          "client_id": "864827028567-682unvo03eg6hlu84qo47d8p30fpo6us.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaiminshah.easystartup",
+            "certificate_hash": "76634c05be3849fe20bb7095c5c86ecbe6b03878"
+          }
+        },
+        {
           "client_id": "864827028567-3frp6uj9e69rlsvdctn9el80hm5uj0ui.apps.googleusercontent.com",
           "client_type": 3
         }
