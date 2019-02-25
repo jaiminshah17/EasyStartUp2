@@ -15,19 +15,17 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class signinactivityforenterprise extends AppCompatActivity implements View.OnClickListener {
+public class signUpPageforInvestor extends AppCompatActivity implements View.OnClickListener{
 
     private Button buttonregister;
     private EditText editetxtemail;
     private EditText edittextpassword;
     private Button textviewsignup;
     private FirebaseAuth mAuth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signin_pagefor_enterprise);
-
+        setContentView(R.layout.activity_signup_pageforinvestor);
         buttonregister = (Button) findViewById(R.id.email_sign_in_button);
         editetxtemail = (EditText) findViewById(R.id.email);
         edittextpassword = (EditText) findViewById(R.id.password);
@@ -37,12 +35,12 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
         mAuth = FirebaseAuth.getInstance();
     }
 
-    private void userlogin() {
+    private void registeruser() {
         String email = editetxtemail.getText().toString().trim();
         String password = edittextpassword.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(this, "please enter email address", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "please enter emaiil address", Toast.LENGTH_LONG).show();
             //email is empty
             return;
         }
@@ -51,37 +49,36 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
             //password is empty
             return;
         }
-        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful())
-                {
-                    //sign in user
-                    Toast.makeText(signinactivityforenterprise.this,"Login done",Toast.LENGTH_LONG).show();
+        //progressDialog.setMessage("Registering there....");
+        //progressDialog.show();
+        mAuth.createUserWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful())
+                        {
+                            //finish();
+                            //startActivity(new Intent(getApplicationContext(),signinactivityforenterprise.class));
+                            Toast.makeText(signUpPageforInvestor.this,"Registration successfull",Toast.LENGTH_LONG).show();
+                        }
+                        else
+                        {
+                            Toast.makeText(signUpPageforInvestor.this,"Registration unsuccessfull",Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
 
-                }
-                else
-                {
-                    Toast.makeText(signinactivityforenterprise.this,"Login error",Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
 
     }
 
-
-
-        @Override
-        public void onClick (View v){
-            if (v == buttonregister) {
-                userlogin();
-            }
-            if (v == textviewsignup) {
-                finish();
-                startActivity(new Intent(this, SignUpPageforEnterprise.class));
-            }
+    @Override
+    public void onClick(View v) {
+        if (v == buttonregister) {
+            registeruser();
+        }
+        if (v == textviewsignup) {
+            //will open signin activity
+            startActivity(new Intent(this, signInpageforInvestor.class));
         }
     }
-
-
+}

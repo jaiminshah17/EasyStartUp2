@@ -15,6 +15,38 @@
       },
       "oauth_client": [
         {
+          "client_id": "864827028567-j2jhkifk5hgd74km482npipk5ico9njf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaiminshah.easystartup",
+            "certificate_hash": "fe80f330349d0f9b878812073f98e80d2c4449d2"
+          }
+        },
+        {
+          "client_id": "864827028567-f1ltvk2gql7s6cv03dqmcqtbmgh7t2l6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaiminshah.easystartup",
+            "certificate_hash": "780a5a1dc2be49b55f2e2c9c82eaebb34e7988a0"
+          }
+        },
+        {
+          "client_id": "864827028567-d2b9vb74gh2huhbambs9qq5e4b62m8kf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaiminshah.easystartup",
+            "certificate_hash": "6b200c0fed10b64a8e50cce43c962971349060ce"
+          }
+        },
+        {
+          "client_id": "864827028567-682unvo03eg6hlu84qo47d8p30fpo6us.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaiminshah.easystartup",
+            "certificate_hash": "76634c05be3849fe20bb7095c5c86ecbe6b03878"
+          }
+        },
+        {
           "client_id": "864827028567-3frp6uj9e69rlsvdctn9el80hm5uj0ui.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +61,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864827028567-3frp6uj9e69rlsvdctn9el80hm5uj0ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

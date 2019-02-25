@@ -9,13 +9,15 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
      private Button button;
      private Button button1;
+     private Button button2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button =(Button)findViewById(R.id.x);
         button1=(Button)findViewById(R.id.y);
-
+        button2=(Button)findViewById(R.id.z);
 
     }
 
@@ -23,12 +25,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v==button)
         {
-            startActivity(new Intent(this,SignUpPageforEnterprise.class));
+            startActivity(new Intent(this,signinactivityforenterprise.class));
         }
         if (v==button1)
         {
-            startActivity(new Intent(this,SignupPageforJobseeker.class));
+            startActivity(new Intent(this,SigninActivityforJobSeeker.class));
         }
+
+         if (v==button2)
+         {
+             startActivity(new Intent(this,signInpageforInvestor.class));
+         }
+
 
     }
 }
