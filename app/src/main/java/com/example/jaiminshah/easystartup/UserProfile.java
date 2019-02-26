@@ -8,7 +8,8 @@ public class UserProfile {
 
     public UserProfile(){}
 
-    public UserProfile(String firstname, String lastname, String college, String userID) {
+    public UserProfile(String userID, String firstname, String lastname, String college ) {
+        this.userID = userID;
         this.firstname = firstname;
         this.lastname = lastname;
         this.college = college;
