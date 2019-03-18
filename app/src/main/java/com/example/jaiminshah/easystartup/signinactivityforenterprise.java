@@ -58,7 +58,7 @@ public class signinactivityforenterprise extends AppCompatActivity implements Vi
                 {
                     //sign in user
                     Toast.makeText(signinactivityforenterprise.this,"Login done",Toast.LENGTH_LONG).show();
-
+                    startActivity(new Intent(getApplicationContext(), Jobseeker_ListActivity.class));
                 }
                 else
                 {

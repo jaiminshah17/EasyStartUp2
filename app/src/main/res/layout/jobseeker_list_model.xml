@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firstname/Lastname"
+        />
+    <TextView
+        android:id="@+id/txt_fn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/txt_user"
+        android:text="firstname"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/txt_ln"
+        android:textSize="20sp"
+        android:layout_below = "@+id/txt_fn"
+        android:text="lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/txt_Con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/txt_ln"
+        android:text="Email/Phone/Address" />
+    <TextView
+        android:id="@+id/email"
+        android:textSize="20sp"
+        android:layout_below = "@+id/txt_Con"
+        android:text="email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/phone"
+        android:textSize="20sp"
+        android:layout_below = "@+id/email"
+        android:text="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/address"
+        android:textSize="20sp"
+        android:layout_below = "@+id/phone"
+        android:text="address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/txt_Edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/address"
+        android:text="Education/Major/Job" />
+    <TextView
+        android:id="@+id/education"
+        android:textSize="20sp"
+        android:layout_below = "@+id/txt_Edu"
+        android:text="education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/major"
+        android:textSize="20sp"
+        android:layout_below = "@+id/education"
+        android:text="major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/job"
+        android:textSize="20sp"
+        android:layout_below = "@+id/major"
+        android:text="job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/Exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/job"
+        android:text="Company/Description"
+        />
+    <TextView
+        android:id="@+id/company"
+        android:textSize="20sp"
+        android:layout_below = "@+id/Exp"
+        android:text="company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/description"
+        android:textSize="20sp"
+        android:layout_below = "@+id/company"
+        android:text="decription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
