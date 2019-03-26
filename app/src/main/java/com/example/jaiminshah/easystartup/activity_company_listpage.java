@@ -1,5 +1,6 @@
 package com.example.jaiminshah.easystartup;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -23,6 +25,7 @@ public class activity_company_listpage extends AppCompatActivity implements View
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     FirebaseRecyclerAdapter<CompanyProfile, CompanyRecyclerViewHolder> adapter;
+//    Button Toprofile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class activity_company_listpage extends AppCompatActivity implements View
 
         //        Toprofile = (Button)findViewById(R.id.toprofile);
         recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
+//        Toprofile = (Button)findViewById(R.id.toprofile);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("Enterprise");
@@ -97,7 +101,7 @@ public class activity_company_listpage extends AppCompatActivity implements View
     @Override
     public void onClick(View v) {
 //        if(v == Toprofile){
-//            startActivity(new Intent(this, Jobseeker_ProfileActivity.class));
+//            startActivity(new Intent(getApplicationContext(), activity_company_profile.class));
 //        }
 
     }

@@ -56,7 +56,7 @@ public class SigninActivityforJobSeeker extends AppCompatActivity implements Vie
                 {
                     //sign in user
                     Toast.makeText(SigninActivityforJobSeeker.this,"login done",Toast.LENGTH_LONG).show();
-                   startActivity(new Intent(getApplicationContext(), activity_company_listpage.class));
+                   startActivity(new Intent(getApplicationContext(), jobseekeer_bottom_navigation.class));
                    // Intent intent = new Intent(this,Jobseeker_ProfileActivity.class)
 
                 }
