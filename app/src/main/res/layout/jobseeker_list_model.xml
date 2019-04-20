@@ -2,126 +2,136 @@
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
 
     <TableLayout
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:background="@drawable/border">
 
 
     <!-- Name -->
         <LinearLayout
             android:orientation="horizontal">
         <TextView
-            android:textSize="25dp"
+            android:textSize="20dp"
 
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="10dp"
             android:id="@+id/txt_user"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
             android:text="First Name:" />
 
         <TextView
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:id="@+id/txt_fn"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_user"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/txt_user"
+            android:textColor="#FFFFFF"
             android:text="firstname"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal">
             <TextView
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/txt_user2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
                 android:text="Last Name:" />
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/txt_ln"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/txt_user"
         android:layout_toRightOf="@+id/txt_fn"
+        android:textColor="#FFFFFF"
         android:text="lastname" />
         </LinearLayout>
-
-
 
     <!-- Contact -->
         <LinearLayout
             android:orientation="horizontal">
     <TextView
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/txt_Con"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below = "@+id/txt_ln"
+        android:textColor="#FFFFFF"
         android:text="Email" />
 
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/email"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/txt_Con"
+        android:textColor="#FFFFFF"
         android:text="email" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal">
             <TextView
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/txt_Con1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below = "@+id/txt_ln"
+                android:textColor="#FFFFFF"
                 android:text="Phone:" />
 
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/phone"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/txt_Con"
         android:layout_toRightOf="@+id/txt_fn"
+        android:textColor="#FFFFFF"
         android:text="phone" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal">
             <TextView
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/txt_Con2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below = "@+id/txt_ln"
+                android:textColor="#FFFFFF"
                 android:text="Address:" />
 
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/address"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/txt_Con"
         android:layout_toRightOf="@+id/phone"
+        android:textColor="#FFFFFF"
         android:text="address" />
         </LinearLayout>
 
@@ -131,67 +141,73 @@
             android:orientation="horizontal">
     <TextView
 
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/txt_Edu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below = "@+id/address"
+        android:textColor="#FFFFFF"
         android:text="Education: " />
 
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/education"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/txt_Edu"
+        android:textColor="#FFFFFF"
         android:text="education" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal">
             <TextView
 
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/txt_Edu1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below = "@+id/address"
+                android:textColor="#FFFFFF"
                 android:text="Major:" />
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/major"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below="@+id/txt_Edu"
         android:layout_toRightOf="@id/education"
+        android:textColor="#FFFFFF"
         android:text="major" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal">
             <TextView
 
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/txt_Edu2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below = "@+id/address"
+                android:textColor="#FFFFFF"
                 android:text="Job:" />
 
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/job"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/txt_Edu"
         android:layout_toRightOf="@+id/major"
+        android:textColor="#FFFFFF"
         android:text="job" />
         </LinearLayout>
 
@@ -201,55 +217,50 @@
             android:orientation="horizontal">
 
     <TextView
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/Exp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below = "@+id/job"
+        android:textColor="#FFFFFF"
         android:text="Experience: " />
 
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/company"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/Exp"
-        android:text="Experience" />
+        android:textColor="#FFFFFF"
+        android:text="experience" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal">
 
         <TextView
-            android:textSize="25dp"
-            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
             android:id="@+id/Exp1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below = "@+id/job"
+            android:textColor="#FFFFFF"
             android:text="Description: " />
 
     <TextView
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/description"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below = "@+id/company"
-        android:text="decription" />
+        android:textColor="#FFFFFF"
+        android:text="description" />
         </LinearLayout>
-
-        <TextView
-            android:textSize="25dp"
-            android:layout_marginTop="2dp"
-            android:id="@+id/cutend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/Exp1"
-            android:text="///////////////////////////" />
 
     </TableLayout>
 
