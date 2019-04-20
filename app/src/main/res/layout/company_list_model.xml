@@ -2,18 +2,24 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <TableLayout
-        android:layout_width="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
+
+
+
+        <LinearLayout android:orientation="horizontal">
     <TextView
+        android:textSize="25sp"
         android:id="@+id/txt_Cname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Company"
+        android:text="Company : "
         />
     <TextView
         android:id="@+id/txt_name"
@@ -22,12 +28,15 @@
         android:layout_below = "@+id/txt_Cname"
         android:text="Name"
         android:textSize="20sp" />
+        </LinearLayout>
 
+        <LinearLayout android:orientation="horizontal">
     <TextView
+        android:textSize="25sp"
         android:id="@+id/txt_Position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recurite Position"
+        android:text="Hiring: "
         android:layout_toRightOf = "@+id/txt_Cname"
         />
     <TextView
@@ -38,12 +47,15 @@
         android:layout_toRightOf = "@+id/txt_name"
         android:text="Position"
         android:textSize="20sp" />
+        </LinearLayout>
 
-    <TextView
+        <LinearLayout android:orientation="horizontal">
+        <TextView
+            android:textSize="25sp"
         android:id="@+id/txt_Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Company Description"
+        android:text="Description: "
         android:layout_toRightOf = "@+id/txt_Position"
         />
     <TextView
@@ -54,6 +66,15 @@
         android:layout_toRightOf = "@+id/txt_Rposition"
         android:text="Name"
         android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cutend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="///////////////////////////" />
 
     </TableLayout>
 
