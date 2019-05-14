@@ -1,5 +1,6 @@
 package com.example.jaiminshah.easystartup;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -18,14 +19,17 @@ public class invesor_bottom_navigation_activity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
+                    startActivity(new Intent(getApplicationContext(),activity_company_listpage.class));
+                    //return true;
+                    break;
                 case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
+                    startActivity(new Intent(getApplicationContext(),Jobseeker_ListActivity.class));
+                    //return true;
+                    break;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
+                    startActivity(new Intent(getApplicationContext(),investor_register_page.class));
+                    //return true;
+                    break;
             }
             return false;
         }

@@ -58,6 +58,7 @@ public class signUpPageforInvestor extends AppCompatActivity implements View.OnC
                         if (task.isSuccessful())
                         {
                             //finish();
+                            startActivity(new Intent(getApplicationContext(), enterprise_bottom_navigation.class));
                             //startActivity(new Intent(getApplicationContext(),signinactivityforenterprise.class));
                             Toast.makeText(signUpPageforInvestor.this,"Registration successfull",Toast.LENGTH_LONG).show();
                         }
