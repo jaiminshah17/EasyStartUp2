@@ -59,9 +59,11 @@ public class SignupPageforJobseeker extends AppCompatActivity implements View.On
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())
                         {
+
                             //finish();
                            // startActivity(new Intent(getApplicationContext(),signinactivityforenterprise.class));
                             Toast.makeText(SignupPageforJobseeker.this,"Registration successfull",Toast.LENGTH_LONG).show();
+
                         }
                         else
                         {

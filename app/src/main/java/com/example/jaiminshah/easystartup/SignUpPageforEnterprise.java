@@ -63,6 +63,7 @@ public class SignUpPageforEnterprise extends AppCompatActivity implements View.O
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())
                         {
+                            startActivity(new Intent(getApplicationContext(), enterprise_bottom_navigation.class));
                             //finish();
                             //startActivity(new Intent(getApplicationContext(),signinactivityforenterprise.class));
                             Toast.makeText(SignUpPageforEnterprise.this,"Registration successfull",Toast.LENGTH_LONG).show();

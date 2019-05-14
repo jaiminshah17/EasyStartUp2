@@ -55,6 +55,7 @@ public class signInpageforInvestor extends AppCompatActivity implements View.OnC
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful())
                 {
+                    startActivity(new Intent(getApplicationContext(), invesor_bottom_navigation_activity.class));
                     //sign in user
                     Toast.makeText(signInpageforInvestor.this,"login done",Toast.LENGTH_LONG).show();
 

@@ -14,8 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".invesor_bottom_navigation_activity"
+            android:label="@string/title_activity_invesor_bottom_navigation_activity"></activity>
+        <activity
             android:name=".jobseekeer_bottom_navigation"
-            android:label="@string/title_activity_jobseekeer_bottom_navigation"></activity>
+            android:label="@string/title_activity_jobseekeer_bottom_navigation" />
         <activity
             android:name=".enterprise_bottom_navigation"
             android:label="@string/title_activity_enterprise_bottom_navigation" />
